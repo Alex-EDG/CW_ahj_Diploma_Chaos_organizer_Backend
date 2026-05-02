@@ -1,4 +1,4 @@
 .idea
 node_modules
-userData/*.*
-userData/storage/*.*
+userData/*
+userData/storage/*

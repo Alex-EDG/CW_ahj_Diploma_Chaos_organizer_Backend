@@ -17,6 +17,8 @@ const emitter = new Emitter();
 const app = new Koa();
 
 app.use(cors({
+  origin: '*',
+  allowMethods: ['GET','HEAD','PUT','POST','DELETE','PATCH'],
   credentials: true
 }));
 

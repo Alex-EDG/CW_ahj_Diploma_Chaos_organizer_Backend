@@ -16,9 +16,7 @@ const emitter = new Emitter();
 
 const app = new Koa();
 
-app.use(cors({
-  credentials: true
-}));
+app.use(cors());
 
 app.use(function* (next) {
   this.db = new Database(`${config.databasePath}/db.json`,emitter);

@@ -9,9 +9,11 @@ const koaBody = require("koa-body");
 const rawBody = require("raw-body");
 const Database = require("./components/dataBase");
 const FileStorage = require("./components/fileStorage");
-const fs = require("fs");
-const dataConfig = fs.readFileSync("config.json", "utf8");
-const config = JSON.parse(dataConfig);
+// const fs = require("fs");
+// const dataConfig = fs.readFileSync("config.json", "utf8");
+const config = require("./config.json");
+// console.log(config);
+// const config = JSON.parse(dataConfig);
 const emitter = new Emitter();
 
 const app = new Koa();

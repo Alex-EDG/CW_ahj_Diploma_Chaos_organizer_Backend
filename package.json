@@ -2,7 +2,7 @@
   "name": "cw-ahj-diploma-chaos-organizer-backend",
   "version": "1.0.0",
   "description": "Дипломное задание к курсу «Продвинутый JavaScript в браузере». Chaos Organizer - Backend",
-  "main": "server.js",
+  "main": "index.js",
   "scripts": {
     "start": "node server.js"
   },

@@ -1,3 +1,4 @@
+const path = require("path");
 const Koa = require("koa");
 const Router = require("koa-router");
 const cors = require("@koa/cors");
@@ -10,7 +11,7 @@ const rawBody = require("raw-body");
 const Database = require("./components/dataBase");
 const FileStorage = require("./components/fileStorage");
 const fs = require("fs");
-const dataConfig = fs.readFileSync("config.json", "utf8");
+const dataConfig = fs.readFileSync("./config.json", "utf8");
 const config = JSON.parse(dataConfig);
 const emitter = new Emitter();
 

@@ -1,0 +1,6 @@
+{
+  "listenPort": 7070,
+  "databasePath": "./userData",
+  "fileStoragePath": "./userData/storage",
+  "defaultUserData": "./defaultUserData"
+}

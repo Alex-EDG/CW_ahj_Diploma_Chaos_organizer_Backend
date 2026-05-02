@@ -43,7 +43,7 @@ app.use(koaBody({
 }));
 
 const router = new Router();
-router.get("/", ctx => ctx.response.body = "I'm alive and listening");
+router.get("/", ctx => ctx.response.body = `I'm alive and listening on port ${port}...`);
 
 require("./components/messageHandlers")(router);
 require("./components/contentHandlers")(router);

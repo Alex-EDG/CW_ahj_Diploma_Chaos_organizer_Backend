@@ -4,7 +4,7 @@
   "description": "Дипломное задание к курсу «Продвинутый JavaScript в браузере». Chaos Organizer - Backend",
   "main": "index.js",
   "scripts": {
-    "start": "node ./server/server.js"
+    "start": "node server.js"
   },
   "repository": {
     "type": "git",

@@ -7,8 +7,8 @@ const Emitter = require("component-emitter");
 const koaBody = require("koa-body");
 
 const rawBody = require("raw-body");
-const Database = require("./dataBase");
-const FileStorage = require("./fileStorage");
+const Database = require("./components/dataBase");
+const FileStorage = require("./components/fileStorage");
 const fs = require("fs");
 const dataConfig = fs.readFileSync("./config.json", "utf8");
 const config = JSON.parse(dataConfig);
@@ -43,11 +43,11 @@ app.use(koaBody({
 }));
 
 const router = new Router();
-router.get("/", ctx => ctx.response.body = "I'm alive, and listening");
+router.get("/", ctx => ctx.response.body = "I'm alive");
 
-require("./messageHandlers")(router);
-require("./contentHandlers")(router);
-require("./streamEvents")(router);
+require("./components/messageHandlers")(router);
+require("./components/contentHandlers")(router);
+require("./components/streamEvents")(router);
 
 app.use(router.routes()).use(router.allowedMethods());
 
@@ -56,3 +56,4 @@ const port = config.listenPort;
 app.listen(port, () => {
   console.log(`Server running on port ${port}...`);
 });
+

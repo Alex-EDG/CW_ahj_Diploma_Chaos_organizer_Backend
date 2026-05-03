@@ -17,7 +17,7 @@ const emitter = new Emitter();
 const app = new Koa();
 
 app.use(cors({
-  origin: 'https://cw-ahj-diploma-chaos-organizer-back.vercel.app',
+  origin: 'https://alex-edg.github.io',
   allowMethods: ['GET','HEAD','PUT','POST','DELETE','PATCH'],
   credentials: true
 }));

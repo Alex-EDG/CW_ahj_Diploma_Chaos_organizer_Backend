@@ -3,7 +3,7 @@
 
 ###### tags: `netology` `advanced js in html`
 
-Backend [Chaos Organizer](https://cw-ahj-diploma-chaos-organizer-back.vercel.app)
+Backend [Chaos Organizer](https://cw-ahj-diploma-chaos-organizer-backend.onrender.com/api)
 
 ## Легенда
 

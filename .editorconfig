@@ -16,6 +16,10 @@ trim_trailing_whitespace = false
 max_line_length = off
 indent_size = 4
 
+[*.css]
+max_line_length = off
+indent_size = 2
+
 [*.py]
 max_line_length = 80
 indent_size = 4
